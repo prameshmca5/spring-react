@@ -11,7 +11,7 @@ class App extends Component{
         <div className="App">
           <header className="App-header">
               <Counter byinc={1}></Counter>
-              <Counter byinc={-10}></Counter>
+              <Counter byinc={-100}></Counter>
               <Counter byinc={100}></Counter>
 
           </header>
