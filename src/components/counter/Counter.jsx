@@ -20,9 +20,9 @@ class Counter extends Component {
     }
 
     componentDidMount() {
-        this.setState(
-            { numbers: [8,9,7,6] }
-        )
+       /* this.setState(
+            { numbers: [9,8,7,6,5,4] }
+        )*/
     }
 
 
@@ -30,20 +30,23 @@ class Counter extends Component {
     render() {
         return(
             <div>
-                {this.state.numbers.map(data =>{console.log(data)})}
+                {/*{this.state.numbers.map(data =>{console.log(data)})}*/}
                 <button onClick={this.increment}>+{this.props.byinc}</button>
                 <span className="counter">{this.state.counter}</span>
 
             </div>
         );
+
+
     }
     increment() {
         //alert("Hello Welcome test");
         // console.log("welcome for increment counter...")
+        console.log(`Increment from parent ==> ${this.props.byinc}`)
         this.setState({
             counter: this.state.counter + this.props.byinc
-
         });
+
     }
 
 }

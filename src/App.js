@@ -11,9 +11,9 @@ class App extends Component{
         <div className="App">
           <header className="App-header">
               <h2>Create and display for Application Header </h2>
-              <Counter byinc={1}></Counter>
-              <Counter byinc={-10}></Counter>
-              <Counter byinc={100}></Counter>
+              <Counter byinc={1} CounterMethod={this.increment} ></Counter>
+              <Counter byinc={-10} CounterMethod={this.increment} ></Counter>
+              <Counter byinc={100} CounterMethod={this.increment} ></Counter>
 
           </header>
         </div>
