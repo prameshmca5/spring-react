@@ -7,7 +7,8 @@ class Counter extends Component {
         super();
         this.state = {
             counter: 0,
-            numbers  :[1, 2, 3, 4, 5]
+            numbers  :[1, 2, 3, 4, 5],
+            listItems : {}
 
         }
          this.increment = this.increment.bind(this);
@@ -15,6 +16,7 @@ class Counter extends Component {
         const listItems = numbers.map((number) =>
             <li>{number}</li>
         );
+
     }
 
     componentDidMount() {
@@ -22,6 +24,8 @@ class Counter extends Component {
             { numbers: [8,9,7,6] }
         )
     }
+
+
 
     render() {
         return(
