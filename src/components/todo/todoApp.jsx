@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../counter/Counter.css';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 
 class TodoApp extends Component {
        render() {
@@ -8,13 +8,15 @@ class TodoApp extends Component {
 
             <div className="todoApps">
                 <Router>
+                    <HeaderComponent></HeaderComponent>
                     <Switch>
                         <Route path="/" exact component={LoginComponent}/>
                         <Route path="/login" component={LoginComponent}/>
                         <Route path="/welcome" component={WelcomeComponent}/>
-                        <Route path={"/todos"} component={ListComponent}/>
+                        <Route path="/todos" component={ListComponent}/>
                         <Route component={ErrorComponent}/>
                     </Switch>
+                    <FooderComponet></FooderComponet>
                 </Router>
             </div>
 
@@ -32,6 +34,37 @@ class TodoApp extends Component {
             */
 
         );
+    }
+}
+
+class HeaderComponent extends Component{
+    render(){
+        return(
+            <header>
+                <nav className="navbar  navbar-expand-md navbar-dark bg-dark text-primary">
+                    <div className="navbar-brand"><h3><b><a href="/"> Test Site</a></b></h3></div>
+                    <ul className="navbar-nav">
+                        <li className="nav-link"><Link to="/">Home</Link></li>
+                        <li className="nav-link"><Link to="/todos">Todos</Link></li>
+                        <li className="nav-link"><Link to="/welcome">Welcome</Link></li>
+                    </ul>
+                    <ul className="navbar-nav navbar-collapse justify-content-end">
+                        <li className="nav-link"><Link to="/login">Login</Link></li>
+                        <li className="nav-link"><Link to="/logout">Logout</Link></li>
+                    </ul>
+                </nav>
+            </header>
+        )
+    }
+}
+
+class FooderComponet extends Component {
+    render() {
+        return(
+             <footer className="footer">
+                 All content Reserved for Ramesh.
+             </footer>
+        )
     }
 }
 
@@ -54,7 +87,6 @@ class LoginComponent extends Component {
     }
 
     loginClicked(event){
-        debugger;
         if(this.state.username==='ramesh' && this.state.password==='password') {
             console.log("Successful");
             this.props.history.push('/welcome')
@@ -86,7 +118,9 @@ class LoginComponent extends Component {
 class WelcomeComponent extends Component{
     render() {
         return(
-           <div>Welcome Component</div>
+           <div>
+               Please check that todo List in <Link to="/todos">here.</Link>
+           </div>
         )
     }
 }
@@ -96,6 +130,7 @@ class ErrorComponent extends Component {
         return (
             <div className="errorComp">
                 Somthing is Wrong, Kindly Contact to Server Team and Rectified about that issue.
+
             </div>
         )
     }
@@ -106,10 +141,48 @@ class ListComponent extends Component {
     constructor(props){
         super(props);
 
+        this.state = {
+            todoList : [
+                    {fname: 'Ramesh' , lname : 'Pongi', age:22, targetDate: new Date()},
+                    {fname: 'kavin', lname : 'Kumar', age:24, targetDate: new Date()},
+                    {fname: 'Tamil', lname: 'Mani', age:24, targetDate: new Date()},
+                    {fname: 'lakshana', lname: 'Ramesh', age:1, targetDate: new Date()},
+                    {fname: 'Amutha', lname: 'Ganapathi', age:26, targetDate: new Date()}
+                ]
+        }
+
     }
     render() {
         return(
-          <div>List Component Created.</div>
+          <div>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th><b>#</b></th>
+                        <th><b>FIRST NAME</b></th>
+                        <th><b>LAST NAME</b></th>
+                        <th><b>AGE</b></th>
+                        <th><b>DATE</b></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {
+                        this.state.todoList.map((todo, index) =>
+                            <tr>
+                                <td>{index+1}</td>
+                                <td>{todo.fname.toString()}</td>
+                                <td>{todo.lname}</td>
+                                <td>{todo.age}</td>
+                                <td>{todo.targetDate.toString()}</td>
+                            </tr>
+                        )
+                    }
+                    </tbody>
+
+                </table>
+                Please Goback page: <Link to="/welcome">here.</Link>
+
+          </div>
         );
     }
 }
