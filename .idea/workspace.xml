@@ -1,37 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42fd8ca3-2391-486d-bac5-d4c285d2e84b" name="Default Changelist" comment="">
+    <list default="true" id="42fd8ca3-2391-486d-bac5-d4c285d2e84b" name="Default Changelist" comment="UPDated info details">
+      <change afterPath="$PROJECT_DIR$/src/components/todo/Authenticate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/todo/AuthenticateRoute.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/todoApp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/todoApp.jsx" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UFMrfW9PMosPaDuJ2lfiTsFbYn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -45,7 +59,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574948089512</updated>
-      <workItem from="1574948090894" duration="6677000" />
+      <workItem from="1574948090894" duration="8848000" />
+      <workItem from="1575185326071" duration="14189000" />
+      <workItem from="1575295458469" duration="614000" />
+      <workItem from="1575382964321" duration="103000" />
+      <workItem from="1575383137834" duration="3026000" />
+      <workItem from="1575467404404" duration="177000" />
+      <workItem from="1575468522198" duration="164000" />
+      <workItem from="1575468711880" duration="84000" />
+      <workItem from="1575468822520" duration="43000" />
+      <workItem from="1575469005572" duration="98000" />
+      <workItem from="1575469123819" duration="111000" />
+      <workItem from="1575469252931" duration="1601000" />
+      <workItem from="1575472756632" duration="1381000" />
     </task>
     <task id="LOCAL-00001" summary="Added new Project in spring boot and using react front end.">
       <created>1574955652010</created>
@@ -61,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574955834984</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="UPDated info details">
+      <created>1574956846760</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574956846760</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,20 +130,24 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
-    </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added new Project in spring boot and using react front end." />
     <MESSAGE value="update and checked value for negative and positive." />
-    <option name="LAST_COMMIT_MESSAGE" value="update and checked value for negative and positive." />
+    <MESSAGE value="UPDated info details" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDated info details" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="165" key="SettingsEditor" timestamp="1575470855506">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575470855506" />
   </component>
 </project>

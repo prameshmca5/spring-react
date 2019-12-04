@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import '../counter/Counter.css';
 import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import Authenticate from "./Authenticate.js";
+import AuthenticateRoute from "./AuthenticateRoute";
 
 class TodoApp extends Component {
        render() {
@@ -12,8 +14,9 @@ class TodoApp extends Component {
                     <Switch>
                         <Route path="/" exact component={LoginComponent}/>
                         <Route path="/login" component={LoginComponent}/>
-                        <Route path="/welcome" component={WelcomeComponent}/>
-                        <Route path="/todos" component={ListComponent}/>
+                        <AuthenticateRoute path="/welcome" component={WelcomeComponent}/>
+                        <AuthenticateRoute path="/todos" component={ListComponent}/>
+                        <AuthenticateRoute path="/logout" component={LogoutComponent}/>
                         <Route component={ErrorComponent}/>
                     </Switch>
                     <FooderComponet></FooderComponet>
@@ -50,7 +53,7 @@ class HeaderComponent extends Component{
                     </ul>
                     <ul className="navbar-nav navbar-collapse justify-content-end">
                         <li className="nav-link"><Link to="/login">Login</Link></li>
-                        <li className="nav-link"><Link to="/logout">Logout</Link></li>
+                        <li className="nav-link"><Link to="/logout" onClick={Authenticate.logout}>Logout</Link></li>
                     </ul>
                 </nav>
             </header>
@@ -89,6 +92,7 @@ class LoginComponent extends Component {
     loginClicked(event){
         if(this.state.username==='ramesh' && this.state.password==='password') {
             console.log("Successful");
+            Authenticate.registerLoginSuccess(this.state.username, this.state.password);
             this.props.history.push('/welcome')
            // this.setState({invalidmsg:false});
             //this.setState({successmsg: true});
@@ -125,6 +129,16 @@ class WelcomeComponent extends Component{
     }
 }
 
+class LogoutComponent extends Component{
+    render() {
+        return(
+            <div>
+                <h2>Thank you for using this site.. bye bye..</h2>
+            </div>
+        )
+    }
+}
+
 class ErrorComponent extends Component {
     render() {
         return (
@@ -155,7 +169,7 @@ class ListComponent extends Component {
     render() {
         return(
           <div>
-                <table class="table table-hover">
+                <table className="table table-hover">
                     <thead>
                     <tr>
                         <th><b>#</b></th>
@@ -168,7 +182,7 @@ class ListComponent extends Component {
                     <tbody>
                     {
                         this.state.todoList.map((todo, index) =>
-                            <tr>
+                            <tr key={index}>
                                 <td>{index+1}</td>
                                 <td>{todo.fname.toString()}</td>
                                 <td>{todo.lname}</td>
