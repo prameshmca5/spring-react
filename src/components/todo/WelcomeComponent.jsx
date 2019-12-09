@@ -14,7 +14,7 @@ class WelcomeComponent extends Component{
 
 
     render() {
-        debugger
+
         var pathname = this.props.match.params.name;
         return(
             <div>
@@ -23,7 +23,7 @@ class WelcomeComponent extends Component{
                 <button onClick={this.getwelcomeMessage} className="btn btn-warning">Get Welcome Message</button>
                 <br/><br/>
                 <div className="container">
-                    <h4>{this.state.welcomeMessage}</h4>
+                    <h4>Hello Mr/Ms {this.state.welcomeMessage}</h4>
                 </div>
             </div>
         )
@@ -31,7 +31,7 @@ class WelcomeComponent extends Component{
 
     getwelcomeMessage(){
         console.log("Welcome message triggered....");
-        WelcomeApiSerive.getWelcomeserviceMessage()
+        WelcomeApiSerive.getWelcomeserviceMessage(this.props.match.params.name)
             .then( response => this.handleSuccessResponds(response) )
             .catch(function (error) {
                 console.log(error)

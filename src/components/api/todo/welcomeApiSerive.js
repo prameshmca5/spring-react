@@ -1,8 +1,9 @@
 import axios from 'axios';
 class WelcomeApiSerive {
 
-    getWelcomeserviceMessage() {
-        return axios.get('http://localhost:7060/hellobean');
+    getWelcomeserviceMessage(name) {
+       // return axios.get(`http://localhost:7060/hellobean/path/${name}`);
+        return axios.get('http://rameshp.in/test/testapi.php');
     }
 }
 
