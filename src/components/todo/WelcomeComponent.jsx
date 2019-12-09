@@ -23,7 +23,7 @@ class WelcomeComponent extends Component{
                 <button onClick={this.getwelcomeMessage} className="btn btn-warning">Get Welcome Message</button>
                 <br/><br/>
                 <div className="container">
-                    <h4>Hello Mr/Ms {this.state.welcomeMessage}</h4>
+                    <h4>Hello {this.state.welcomeMessage}</h4>
                 </div>
             </div>
         )

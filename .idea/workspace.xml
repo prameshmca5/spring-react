@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/api/todo/welcomeApiSerive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/api/todo/welcomeApiSerive.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/todo/WelcomeComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/WelcomeComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todo/todoApp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/todoApp.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <workItem from="1575469123819" duration="111000" />
       <workItem from="1575469252931" duration="1601000" />
       <workItem from="1575472756632" duration="1381000" />
-      <workItem from="1575624846105" duration="12572000" />
+      <workItem from="1575624846105" duration="12950000" />
     </task>
     <task id="LOCAL-00001" summary="Added new Project in spring boot and using react front end.">
       <created>1574955652010</created>
@@ -112,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575876144767</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated Api for rameshp.in website.">
+      <created>1575878828302</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575878828302</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,24 +168,25 @@
     <MESSAGE value="UPDated info details" />
     <MESSAGE value="Login Component seprate to created new Component." />
     <MESSAGE value="Latest update using for API service." />
-    <option name="LAST_COMMIT_MESSAGE" value="Latest update using for API service." />
+    <MESSAGE value="Updated Api for rameshp.in website." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Api for rameshp.in website." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="341" y="28" key="CommitChangelistDialog2" timestamp="1575876142812">
+    <state x="341" y="28" key="CommitChangelistDialog2" timestamp="1575878827265">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="341" y="28" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1575876142812" />
+    <state x="341" y="28" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1575878827265" />
     <state x="463" y="165" key="SettingsEditor" timestamp="1575470855506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575470855506" />
-    <state x="312" y="153" key="Vcs.Push.Dialog.v2" timestamp="1575876164925">
+    <state x="312" y="153" key="Vcs.Push.Dialog.v2" timestamp="1575878832039">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="153" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1575876164925" />
-    <state x="531" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575878800246">
+    <state x="312" y="153" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1575878832039" />
+    <state x="531" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575879176557">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="531" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860@0.0.1440.860" timestamp="1575878800246" />
+    <state x="531" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860@0.0.1440.860" timestamp="1575879176557" />
   </component>
 </project>

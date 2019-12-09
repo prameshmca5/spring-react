@@ -3,7 +3,7 @@ class WelcomeApiSerive {
 
     getWelcomeserviceMessage(name) {
        // return axios.get(`http://localhost:7060/hellobean/path/${name}`);
-        return axios.get('http://rameshp.in/test/testapi.php');
+        return axios.get('https://rameshp.in/test/testapi.php');
     }
 }
 
