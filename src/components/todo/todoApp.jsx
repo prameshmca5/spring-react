@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 import '../counter/Counter.css';
-import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import AuthenticateRoute from "./AuthenticateRoute";
 import LoginComponent from "./LoginComponent";
 import ListComponent from "./ListComponent";
 import HeaderComponent from "./HeaderComponent";
 import FooderComponet from "./FooderComponet";
+import WelcomeComponent from "./WelcomeComponent";
+import LogoutComponent from "./LogoutComponent";
+import ErrorComponent from "./ErrorComponent";
+
 
 class TodoApp extends Component {
        render() {
@@ -44,36 +48,9 @@ class TodoApp extends Component {
 }
 
 
-class WelcomeComponent extends Component{
-    render() {
-        return(
-           <div>
-               Please check that todo List in <Link to="/todos">here.</Link>
-           </div>
-        )
-    }
-}
 
-class LogoutComponent extends Component{
-    render() {
-        return(
-            <div>
-                <h2>Thank you for using this site.. bye bye..</h2>
-            </div>
-        )
-    }
-}
 
-class ErrorComponent extends Component {
-    render() {
-        return (
-            <div className="errorComp">
-                Somthing is Wrong, Kindly Contact to Server Team and Rectified about that issue.
 
-            </div>
-        )
-    }
-}
 
 
 export default TodoApp;

@@ -12,7 +12,7 @@ class HeaderComponent extends Component{
                     <ul className="navbar-nav">
                         <li className="nav-link"><Link to="/">Home</Link></li>
                         <li className="nav-link"><Link to="/todos">Todos</Link></li>
-                        <li className="nav-link"><Link to="/welcome">Welcome</Link></li>
+                        <li className="nav-link"><Link to="/welcome/:name">Welcome</Link></li>
                     </ul>
                     <ul className="navbar-nav navbar-collapse justify-content-end">
                         <li className="nav-link"><Link to="/login">Login</Link></li>

@@ -6,8 +6,10 @@ import TodoApp from "./components/todo/todoApp";
 class App extends Component{
     render() {
         return (
-            <div className="App">
-                <TodoApp></TodoApp>
+            <div className="container-fluid">
+                <div className="App">
+                    <TodoApp></TodoApp>
+                </div>
             </div>
         );
     }
