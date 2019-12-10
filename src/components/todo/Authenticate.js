@@ -13,6 +13,12 @@ class Authenticate {
         if(user===null) return false;
         return true;
     }
+
+    isLogginUsername(){
+        let user = sessionStorage.getItem("AuthenticateUser");
+        if(user===null) return '';
+        return user;
+    }
 }
 
 export default new Authenticate();
