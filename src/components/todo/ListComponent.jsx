@@ -10,7 +10,7 @@ class ListComponent extends Component {
         this.state = {
             todoList : ['']
         }
-
+        this.clickDeleteContent = this.clickDeleteContent.bind(this);
 
     }
     render() {
@@ -24,6 +24,7 @@ class ListComponent extends Component {
                         <th><b>DESCRIPTION</b></th>
                         <th><b>DATE</b></th>
                         <th><b>STATUS</b></th>
+                        <th><b>Action</b></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -38,6 +39,7 @@ class ListComponent extends Component {
                                 <td>{todo.description}</td>
                                 <td>{todo.targetDate}</td>
                                 <td>{todo.isDone}</td>
+                                <td><button name="delete" className={"btn btn-warning"} onClick={() => this.clickDeleteContent(todo.id)}>Delete</button></td>
                             </tr>
                         )
 
@@ -50,7 +52,8 @@ class ListComponent extends Component {
     }
 
     componentDidMount() {
-        this.gettodoMessage();
+        this.gettodoMessage()
+        this.refereshTodoList();
     }
 
     gettodoMessage(){
@@ -71,10 +74,26 @@ class ListComponent extends Component {
         this.setState(
             {
                 todoList : resp.data
-
             }
-
         );
+    }
+
+    refereshTodoList(){
+        let username = Authenticate.isLogginUsername();
+        WelcomeApiSerive.getTodoserviceMessage(username)
+            .then( response => this.handleSuccessResponds(response) )
+            .catch(function (error) {
+                console.log(error)
+            })
+    }
+
+    clickDeleteContent(id){
+        let username = Authenticate.isLogginUsername();
+        WelcomeApiSerive.getTodoserviceDelete(username, id)
+            .then(response => this.handleSuccessResponds(response))
+            .catch(function (error) {
+                console.log(error);
+            })
     }
 }
 

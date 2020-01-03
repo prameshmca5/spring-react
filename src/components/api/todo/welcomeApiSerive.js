@@ -7,9 +7,13 @@ class WelcomeApiSerive {
     }
 
     getTodoserviceMessage(username) {
-        debugger
-        // return axios.get(`http://localhost:7060/hellobean/path/${name}`);
+         // return axios.get(`http://localhost:7060/hellobean/path/${name}`);
         return axios.get(`http://localhost:7060/users/${username}/todos`);
+    }
+
+    getTodoserviceDelete(username, id) {
+        // return axios.get(`http://localhost:7060/hellobean/path/${name}`);
+        return axios.delete(`http://localhost:7060/users/${username}/todos/${id}`);
     }
 }
 

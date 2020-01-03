@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42fd8ca3-2391-486d-bac5-d4c285d2e84b" name="Default Changelist" comment="Updated Api for rameshp.in website.">
+    <list default="true" id="42fd8ca3-2391-486d-bac5-d4c285d2e84b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/api/todo/welcomeApiSerive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/api/todo/welcomeApiSerive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todo/Authenticate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/Authenticate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/todo/ListComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/ListComponent.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +74,9 @@
       <workItem from="1575469123819" duration="111000" />
       <workItem from="1575469252931" duration="1601000" />
       <workItem from="1575472756632" duration="1381000" />
-      <workItem from="1575624846105" duration="22773000" />
+      <workItem from="1575624846105" duration="30072000" />
+      <workItem from="1576469651038" duration="3461000" />
+      <workItem from="1578033055902" duration="1310000" />
     </task>
     <task id="LOCAL-00001" summary="Added new Project in spring boot and using react front end.">
       <created>1574955652010</created>
@@ -126,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575879186767</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated Api for rameshp.in website1.">
+      <created>1575973488611</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575973488611</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,21 +185,22 @@
     <MESSAGE value="Login Component seprate to created new Component." />
     <MESSAGE value="Latest update using for API service." />
     <MESSAGE value="Updated Api for rameshp.in website." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Api for rameshp.in website." />
+    <MESSAGE value="Updated Api for rameshp.in website1." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Api for rameshp.in website1." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="341" y="28" key="CommitChangelistDialog2" timestamp="1575888308222">
+    <state x="341" y="28" key="CommitChangelistDialog2" timestamp="1575973487481">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="341" y="28" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1575888308222" />
+    <state x="341" y="28" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1575973487481" />
     <state x="463" y="165" key="SettingsEditor" timestamp="1575470855506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575470855506" />
-    <state x="312" y="153" key="Vcs.Push.Dialog.v2" timestamp="1575879190304">
+    <state x="312" y="153" key="Vcs.Push.Dialog.v2" timestamp="1575973494542">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="153" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1575879190304" />
+    <state x="312" y="153" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1575973494542" />
     <state x="531" y="348" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575973474407">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
